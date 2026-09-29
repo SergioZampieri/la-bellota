@@ -25,6 +25,10 @@ npm run build                # static site in out/
 
 ## Deploy
 
-`out/` is plain HTML, CSS and JS: any static host works. Under a sub-path
-(e.g. GitHub Pages at `/<repo>/`), build with
-`NEXT_PUBLIC_BASE_PATH=/<repo> npm run build`.
+Live at **https://sergiozampieri.github.io/la-bellota/**.
+
+Every push to `main` builds and publishes the site to GitHub Pages
+(`.github/workflows/pages.yml`; repo Settings → Pages → Source: GitHub Actions).
+
+`out/` is plain HTML, CSS and JS, so any static host also works. Under a
+sub-path, build with `NEXT_PUBLIC_BASE_PATH=/<path> npm run build`.
