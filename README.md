@@ -6,6 +6,10 @@ Facebook for bookings and contact.
 
 Next.js 16 · TypeScript · Tailwind CSS 4 · shadcn/ui · Motion · React Bits
 
+## Deploy
+
+Live at **https://sergiozampieri.github.io/la-bellota/**.
+
 ## Run
 
 ```bash
@@ -23,12 +27,3 @@ npm run build                # static site in out/
 | Colours, fonts, radius | `app/globals.css`, `app/layout.tsx` |
 | Photos | `public/img/` |
 
-## Deploy
-
-Live at **https://sergiozampieri.github.io/la-bellota/**.
-
-Every push to `main` builds and publishes the site to GitHub Pages
-(`.github/workflows/pages.yml`; repo Settings → Pages → Source: GitHub Actions).
-
-`out/` is plain HTML, CSS and JS, so any static host also works. Under a
-sub-path, build with `NEXT_PUBLIC_BASE_PATH=/<path> npm run build`.
